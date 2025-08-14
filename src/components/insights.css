@@ -1,0 +1,53 @@
+:root {
+  --main-color: #0B3D91;
+  --secondary-color: #1E90FF;
+  --bg-color: #ffffff;
+  --light-grey: #f8f9fa;
+}
+
+.section-title {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.section-text {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.vm-card {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+
+.vm-title {
+  color: var(--main-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-card {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  transition: transform 0.2s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.btn-main {
+  background-color: var(--main-color);
+  color: white !important;
+}
+
+.btn-main:hover {
+  background-color: var(--secondary-color);
+}

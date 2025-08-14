@@ -1,0 +1,81 @@
+/* 
+.hero-section {
+  background-color: #0B3D91;
+}
+
+.section-title {
+  color: #0B3D91;
+  font-weight: bold;
+}
+
+.feature-card {
+  background-color: #F2F2F2;
+  border: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+.feature-card:hover {
+  background-color: #1E90FF;
+  color: #fff;
+}
+
+.industry-box {
+  background-color: #F2F2F2;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+.industry-box:hover {
+  background-color: #1E90FF;
+  color: #fff;
+}
+
+.cta-section {
+  background-color: #0B3D91;
+}
+.cta-button:hover {
+  background-color: #1E90FF;
+  color: #fff;
+} */
+
+
+:root {
+  --main-color: #0B3D91;
+  --secondary-color: #1E90FF;
+  --bg-color: #ffffff;
+  --light-grey: #f8f9fa;
+}
+
+/* Hero Section */
+.about-hero {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.hero-title {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* About Section */
+.about-text {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Vision & Mission */
+.vm-card {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+
+.vm-title {
+  color: var(--main-color);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

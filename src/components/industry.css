@@ -1,0 +1,47 @@
+/* .industry-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.industry-card {
+  transition: transform 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+} */
+
+
+:root {
+  --main-color: #0B3D91;
+  --secondary-color: #1E90FF;
+  --bg-color: #ffffff;
+  --light-grey: #f8f9fa;
+}
+
+.page-title {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.industry-card {
+  border: 2px solid var(--secondary-color);
+  border-radius: 10px;
+  background-color: var(--bg-color);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.industry-icon {
+  font-size: 2rem;
+  color: var(--secondary-color);
+}
+
+.industry-name {
+  font-weight: 600;
+  color: #333;
+}

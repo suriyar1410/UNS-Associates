@@ -1,0 +1,65 @@
+:root {
+  --main-color: #0B3D91;
+  --secondary-color: #1E90FF;
+  --bg-color: #ffffff;
+}
+
+.contact-page {
+  background-color: var(--bg-color) !important;
+}
+
+.main-title {
+  color: var(--main-color) !important;
+  font-weight: bold;
+}
+
+.office-card .card-title ,.title{
+  color: var(--main-color) !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+.office-card {
+  border: 2px solid var(--secondary-color);
+  border-radius: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.office-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.office-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+.email-link {
+  color: var(--secondary-color) !important;
+  text-decoration: underline;
+}
+
+.enquiry-card {
+  max-width: 600px;
+  border: 2px solid var(--main-color) !important;
+  border-radius: 15px;
+}
+
+.btn-main {
+  background-color: var(--main-color) !important;
+  color: white !important;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  border-radius: 15px;
+}
+
+.btn-main:hover {
+  background-color: var(--secondary-color) !important;
+}

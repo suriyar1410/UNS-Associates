@@ -1,0 +1,111 @@
+.carousel-caption.custom-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.1); 
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.carousel-caption h1,
+.carousel-caption p {
+  font-size: 2rem;
+  color: #f3f3f3;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+}
+
+.custom-card {
+  width: 80%;
+  height: auto;
+  background-color: #0B3D91;
+  color: white;
+  border-radius: 15px;
+  padding: 15px 50PX;
+  margin: 20px auto;
+  text-align: justify;
+}
+
+.custom-card p {
+  font-size: 1rem;
+   font-weight: bold;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+.custom {
+  background-color: #ffffff;
+  color: #0B3D91;
+  border: 2px solid #eee;
+  border-radius: 15px;
+  padding: 20px;
+  min-height: 180px;
+  text-align: justify;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.custom h4 {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.custom p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
+.service-card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px #0B3D91;
+}
+
+.service-img {
+  height: 200px;
+  object-fit: cover;
+}
+.title{
+    color: #0B3D91;
+    font-size: larger;
+}
+.main-title{
+    color: #0B3D91;
+    font-size: 40px;
+}
+.button{
+  color:white;
+  border-radius: 25PX;
+  background-color:#1E90FF;
+}
+.service-card h5 {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.service-card ul li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  color: #0B3D91;
+  font-weight: bolder;
+}
+
+.bg-primary-banner {
+  background-color: #0B3D91;
+  height: 100px;
+  width: 100%;
+}

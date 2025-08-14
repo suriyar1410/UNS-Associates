@@ -1,0 +1,84 @@
+.custom-navbar {
+gap:0;
+text-align: center;
+height: 100px;
+width: auto;
+padding: 0px 20px;
+box-shadow: 2px 1px 3px #eeeeee;
+}
+
+.navbar-logo {
+  height: 100px;
+  width: auto;
+}
+.menu {
+  font-weight: bolder;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.menu .nav-link {
+  color: #0B3D91 ;
+
+}
+.menu .nav-link:hover {
+color:#1E90FF;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; 
+}
+
+.custom-dropdown {
+  font-weight: 100;
+  background-color: #0B3D91 !important;
+  border: none;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 10px;
+  color: white;
+  /* transition: background-color 0.3s ease; */
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #1E90FF;
+  color: white;
+
+}
+@media (max-width: 410px) {
+.navbar-logo {
+  height: 70px;
+  width: 200px;
+}
+
+}
+@media (max-width: 991px) {
+  /* Solid background for mobile menu */
+  .navbar-collapse {
+    position: absolute;
+    top: 100px; /* adjust to match your navbar height */
+    left: 0;
+    width: 100%;
+    background-color: white !important; /* solid white background */
+    z-index: 1050; /* ensures it's above the page content */
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+  }
+
+  /* Dropdown menus inside mobile menu */
+  .navbar-collapse .dropdown-menu {
+    background-color: #0B3D91 !important;
+    border: none;
+  }
+
+  .navbar-collapse .dropdown-item {
+    color: white !important;
+  }
+
+  .navbar-collapse .dropdown-item:hover {
+    background-color: #1E90FF;
+    color: white !important;
+  }
+}
