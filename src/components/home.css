@@ -109,3 +109,24 @@
   height: 100px;
   width: 100%;
 }
+
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #495057; /* Dark gray background */
+  color: white;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #198754; /* Bootstrap green */
+  transform: scale(1.1); /* Slight zoom */
+  color: white;
+}

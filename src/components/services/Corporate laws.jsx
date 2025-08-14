@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import '../../index.css';
 
-export default function AuditAssurance() {
+export default function Corporatelaws() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleSection = (index) => {
@@ -68,7 +68,7 @@ export default function AuditAssurance() {
     <div className="container-fluid p-0">
       {/* Header */}
       <div className="background py-3 text-center">
-        <h1 className="fw-bold">Audit & Assurance</h1>
+        <h1 className="fw-bold">Corporate Laws</h1>
       </div>
 
       {/* Main Image */}
@@ -82,7 +82,7 @@ export default function AuditAssurance() {
 
       {/* Intro */}
       <div className="container py-3">
-        <h2 className="fw-bold text-success mb-3">Audit & Assurance</h2>
+        <h2 className="fw-bold text-success mb-3">Corporate Laws</h2>
         <p>
           Providing assurance services under various statutes across various industries for the past several decades.
         </p>

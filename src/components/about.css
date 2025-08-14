@@ -44,7 +44,7 @@
   --light-grey: #f8f9fa;
 }
 
-/* Hero Section */
+
 .about-hero {
   background-color: var(--main-color);
   color: white;
@@ -60,14 +60,14 @@
   margin-top: 0.5rem;
 }
 
-/* About Section */
+
 .about-text {
   font-size: 1.05rem;
   margin-bottom: 1rem;
   color: #333;
 }
 
-/* Vision & Mission */
+
 .vm-card {
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
