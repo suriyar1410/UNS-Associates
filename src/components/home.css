@@ -110,7 +110,6 @@
   width: 100%;
 }
 
-
 .social-icon {
   display: flex;
   align-items: center;
@@ -118,7 +117,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #495057; /* Dark gray background */
+  background-color: #495057; 
   color: white;
   font-size: 1.2rem;
   transition: all 0.3s ease;
@@ -126,7 +125,7 @@
 }
 
 .social-icon:hover {
-  background-color: #198754; /* Bootstrap green */
-  transform: scale(1.1); /* Slight zoom */
+  background-color: #198754;
+  transform: scale(1.1);
   color: white;
 }

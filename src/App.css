@@ -39,7 +39,7 @@ color:#1E90FF;
 .custom-dropdown .dropdown-item {
   padding: 10px;
   color: white;
-  /* transition: background-color 0.3s ease; */
+  transition: background-color 0.3s ease;
 }
 
 .custom-dropdown .dropdown-item:hover {
@@ -55,19 +55,17 @@ color:#1E90FF;
 
 }
 @media (max-width: 991px) {
-  /* Solid background for mobile menu */
   .navbar-collapse {
     position: absolute;
-    top: 100px; /* adjust to match your navbar height */
+    top: 100px; 
     left: 0;
     width: 100%;
-    background-color: white !important; /* solid white background */
-    z-index: 1050; /* ensures it's above the page content */
+    background-color: white !important; 
+    z-index: 1050;
     padding: 10px 15px;
     border-top: 1px solid #ddd;
   }
 
-  /* Dropdown menus inside mobile menu */
   .navbar-collapse .dropdown-menu {
     background-color: #0B3D91 !important;
     border: none;

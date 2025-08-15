@@ -27,6 +27,34 @@
   margin-bottom: 1rem;
 }
 
+
+.service-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; 
+  margin-bottom: 0.5rem;
+}
+
+/*need to change*/
+
+.service-icon img {
+  /* width: 400px;
+  height: 200px; */
+   width: 100% ;
+  height: auto; 
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 8px; 
+}
+
+.service-card h5 {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+
 .service-card {
   border: 2px solid var(--secondary-color);
   border-radius: 10px;
@@ -38,10 +66,10 @@
   transform: translateY(-5px);
 }
 
-.service-icon {
+/* .service-icon {
   font-size: 2rem;
   color: var(--secondary-color);
-}
+} */
 
 .btn-main {
   background-color: var(--main-color);

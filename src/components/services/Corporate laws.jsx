@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import '../../index.css';
 
@@ -123,9 +123,9 @@ export default function Corporatelaws() {
           <div className="col-md-3 bg-success text-white p-3 rounded">
             <h5 className="fw-bold">How we can help you?</h5>
             <p>Contact us at the office nearest to you or submit a business enquiry online.</p>
-            <button className="btn btn-light text-success fw-semibold">
-              CONTACT US
-            </button>
+        <Link to="/contact" className="btn btn-light text-success fw-semibold">
+  CONTACT US
+</Link>
           </div>
         </div>
       </div>

@@ -64,7 +64,6 @@ function App() {
             <li className="nav-item mx-2">
               <Link className="nav-link" to="/careers">Join With Our Team</Link>
             </li>
-
                 <li className="nav-item mx-2">
               <Link className="nav-link" to="/Contact">Contact</Link>
             </li>

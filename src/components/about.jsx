@@ -1,117 +1,3 @@
-
-// import "./About.css";
-
-// const About = () => {
-//   return (
-
- 
-//      <div className="about-page bg-light">
-//       {/* Hero Section */}
-//       <section className="hero-section text-white text-center py-5">
-//         <div className="container">
-//           <h1 className="display-4 fw-bold">About U N S & Associates</h1>
-//           <p className="lead">
-//             Your trusted partner in Taxation, Audit, Legal, and Advisory Services.
-//           </p>
-//         </div>
-//       </section>
-
-//       {/* Who We Are Section */}
-//       <section className="container py-5">
-//         <div className="row align-items-center">
-//           <div className="col-md-6 mb-4 mb-md-0">
-//             <img src="/images/about-office.jpg" alt="Office" className="img-fluid rounded shadow" />
-//           </div>
-//           <div className="col-md-6">
-//             <h2 className="section-title">Who We Are</h2>
-//             <p>
-//               U N S & Associates is a professionally managed firm offering a wide range of services in taxation,
-//               audit, and business advisory. Backed by experienced Chartered Accountants and Consultants, we provide
-//               personalized solutions for your business.
-//             </p>
-//             <p>
-//               Our team is committed to delivering high-quality, ethical, and technology-driven services to help you
-//               stay ahead.
-//             </p>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Mission/Vision/Values */}
-//       <section className="bg-white py-5">
-//         <div className="container">
-//           <div className="row text-center">
-//             <div className="col-md-4 mb-4">
-//               <h4>Mission</h4>
-//               <p>
-//                 Empower businesses through strategic insights, regulatory compliance, and financial clarity.
-//               </p>
-//             </div>
-//             <div className="col-md-4 mb-4">
-//               <h4>Vision</h4>
-//               <p>
-//                 To be a trusted advisory firm delivering excellence, innovation, and integrity across industries.
-//               </p>
-//             </div>
-//             <div className="col-md-4 mb-4">
-//               <h4>Core Values</h4>
-//               <ul className="list-unstyled">
-//                 <li>✔ Ethics & Integrity</li>
-//                 <li>✔ Client-Centric</li>
-//                 <li>✔ Continuous Learning</li>
-//                 <li>✔ Excellence in Service</li>
-//               </ul>
-//             </div>
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Why Choose Us */}
-    
-
-//       {/* Industries Section */}
-//       <section className="bg-white py-5">
-//         <div className="container">
-//           <h2 className="text-center mb-5 section-title">Industries We Serve</h2>
-//           <div className="row text-center">
-//             {[
-//               "Banking & Finance",
-//               "Textiles",
-//               "Aerospace & Defence",
-//               "IT & Telecom",
-//               "Real Estate",
-//               "Education",
-//               "Healthcare",
-//               "Travel & Leisure",
-//               "Automobile",
-//               "Hospitality",
-//               "Insurance",
-//               "FMCG",
-//             ].map((industry, idx) => (
-//               <div className="col-6 col-md-3 mb-3" key={idx}>
-//                 <div className="industry-box p-3 border rounded">{industry}</div>
-//               </div>
-//             ))}
-//           </div>
-//         </div>
-//       </section>
-
-//       {/* Call to Action */}
-//       <section className="cta-section text-white text-center py-5">
-//         <div className="container">
-//           <h2 className="mb-3">Let’s Grow Together</h2>
-//           <p className="mb-4">Reach out and find how we can help you transform your business.</p>
-//           <a href="/contact" className="btn btn-light btn-lg cta-button">Contact Us</a>
-//         </div>
-//       </section>
-//     </div>
-    
-   
-//   );
-// };
-
-// export default About;
-
 import main from '../assets/image 1.jpg'
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -120,7 +6,6 @@ import "./about.css";
 export default function AboutUs() {
   return (
     <div className="about-us-page">
-      {/* Hero Section */}
       <section className="about-hero text-center py-5">
         <div className="container">
           <h1 className="hero-title">About Us</h1>
@@ -129,8 +14,6 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
-
-      {/* About Section */}
       <section className="about-section py-5">
         <div className="container">
           <p className="about-text">
@@ -146,8 +29,6 @@ export default function AboutUs() {
           </p>
         </div>
       </section>
-
-      {/* Vision & Mission */}
       <section className="vm-section py-5 bg-light">
         <div className="container">
           <div className="row g-4">
@@ -194,13 +75,9 @@ export default function AboutUs() {
       <footer className="bg-dark text-white py-5">
       <div className="container">
         <div className="row">
-
-       {/* Logo */}
          <div className="col-md-4 mb-4 mb-md-0">
             <img src={main} alt="Logo" style={{ width: "250px" }} />
           </div>
-
-         {/* Quick Links */}
        <div className="col-md-4 mb-4 mb-md-0">
   <h5 className="text-uppercase">Useful Links</h5>
   <ul className="list-unstyled mt-3">
@@ -212,12 +89,10 @@ export default function AboutUs() {
     <li><Link to="/careers" className="text-white text-decoration-none">Join Our Team</Link></li>
     <li><Link to="/contact" className="text-white text-decoration-none">Contact</Link></li>
   </ul>
-</div>
-          {/* Contact + Social Icons */}
+       </div>
           <div className="col-md-4">
            <h5 className="text-uppercase">Contact Us</h5>
 
-          {/* Social Media */}
            <div className="d-flex gap-2 mb-3">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="social-icon">
                 <FaFacebookF />
@@ -232,7 +107,6 @@ export default function AboutUs() {
                  <FaInstagram />
               </a>
             </div>
-
              <ul className="list-unstyled">
               <li>Email: <a href="mailto:info@unsassociates.com" className="text-white text-decoration-none">caknr90@gmail.com</a></li>
                <li>Phone: <a href="tel:+911234567890" className="text-white text-decoration-none">96772 78078 </a></li>

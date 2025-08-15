@@ -94,34 +94,33 @@ const Home = () => {
   <h1 className="text-white m-0">U N S & Associates – Chartered Accountants | Excellence, Integrity & Independence</h1>
 </div>
 
- <section className="container my-5">
+<section className="container my-5">
   <h2 className="text-center mb-5 main-title fw-bold">Our Services</h2>
   <div className="row g-4">
-    {[
-      {
-        title: 'Accounting & Bookkeeping',
-        services: ['Ledger maintenance', 'MIS reports', 'Financial statements'],
-        img: image
-      },
+    {[      
       {
         title: 'Taxation',
         services: ['GST returns', 'Income Tax filing', 'Tax advisory'],
-        img: image2
+        img: image2,
+        link: '/services/Taxes'
       },
       {
         title: 'Auditing',
         services: ['Internal audit', 'Statutory audit', 'Tax audit'],
-        img: image3
+        img: image3,
+        link: '/services/audit'
       },
       {
         title: 'Business Setup & Compliance',
         services: ['Company incorporation', 'ROC filings', 'Start-up registration'],
-        img: image3
+        img: image3,
+        link: '/services/business-setup'
       },
       {
         title: 'Other Services',
         services: ['Payroll processing', 'Financial planning', 'Investment advisory'],
-        img: image
+        img: image,
+        link: '/services/other'
       }
     ].map((card, index) => (
       <div key={index} className="col-md-6 col-lg-4">
@@ -134,7 +133,12 @@ const Home = () => {
                 <li key={i}>{item}</li>
               ))}
             </ul>
-            <a href="#" className="btn btn-outline-primary button mt-3 align-self-center">Read More</a>
+            <Link
+              to={card.link}
+              className="btn btn-outline-primary button mt-3 align-self-center"
+            >
+              Read More
+            </Link>
           </div>
         </div>
       </div>

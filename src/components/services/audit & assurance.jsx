@@ -1,7 +1,6 @@
-
-
 import React, { useState } from "react";
 import '../../index.css';
+import { Link } from "react-router-dom";
 
 export default function AuditAssurance() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -66,12 +65,9 @@ export default function AuditAssurance() {
 
   return (
     <div className="container-fluid p-0">
-      {/* Header */}
       <div className="background py-3 text-center">
         <h1 className="fw-bold">Audit & Assurance</h1>
       </div>
-
-      {/* Main Image */}
       <div className="container py-4">
         <img
           src="/audit-image.jpg"
@@ -79,18 +75,13 @@ export default function AuditAssurance() {
           className="img-fluid rounded shadow"
         />
       </div>
-
-      {/* Intro */}
       <div className="container py-3">
         <h2 className="fw-bold text-success mb-3">Audit & Assurance</h2>
         <p>
           Providing assurance services under various statutes across various industries for the past several decades.
         </p>
-
-        {/* Collapsible Sections */}
         {sections.map((sec, idx) => (
           <div key={idx} className="bg-light border rounded p-3 mb-2">
-            {/* Clickable Heading */}
             <div
               className="d-flex justify-content-between align-items-center"
               style={{ cursor: "pointer" }}
@@ -101,8 +92,6 @@ export default function AuditAssurance() {
                 {openIndex === idx ? "▲" : "▼"}
               </span>
             </div>
-
-            {/* Collapsible Content */}
             {openIndex === idx && (
               <div className="mt-3">
                 <ul>
@@ -115,17 +104,15 @@ export default function AuditAssurance() {
           </div>
         ))}
       </div>
-
-      {/* Sidebar */}
       <div className="container py-4">
         <div className="row">
           <div className="col-md-9"></div>
           <div className="col-md-3 bg-success text-white p-3 rounded">
             <h5 className="fw-bold">How we can help you?</h5>
             <p>Contact us at the office nearest to you or submit a business enquiry online.</p>
-            <button className="btn btn-light text-success fw-semibold">
-              CONTACT US
-            </button>
+             <Link to="/contact" className="btn btn-light text-success fw-semibold">
+                CONTACT US
+             </Link>
           </div>
         </div>
       </div>
